@@ -15,6 +15,8 @@ Take a look at the following code:
 ```
 
 Explain why line 4 and line 6 output different numbers.
+Answer: Line 4 is within the function scope, hence x = 2.
+Line 6 falls within the block scope, hence x = 1
 
 ## Question 2
 
@@ -34,6 +36,8 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+Answer: the console.log of the fucntion result to x = 10, as the 'let' variable can be read within a block scope.
+As y is defined within the function only and console.log(y) is defined outside of the function, it cannot read the value of y inside the function.
 
 ## Question 3
 
@@ -62,3 +66,4 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+Answer: x = 9 is declared right at the beginning and never used in the f1 function, hence the console.log(x) reads x as 9 as its blocked scoped.
